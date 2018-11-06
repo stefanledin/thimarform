@@ -9,6 +9,7 @@
 !.modernizrrc
 !webpack.config.js
 !.babelrc
+!todo.md
 !wp-content/
 
 # Ignore everything in the "wp-content" directory, except the "plugins" and "themes" directories.
