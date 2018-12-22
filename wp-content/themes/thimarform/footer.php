@@ -29,12 +29,14 @@
 							<div class="col-sm-3">
 								<h3>Kontakta oss</h3>
 								<hr>
-								<?php
-								the_field('company_info_phone', 'option');
-								echo '<br>';
-								$email = get_field('company_info_email', 'option');
-								echo sprintf('<a href="mailto:%s">%s</a>', antispambot( $email ), antispambot($email) );
-								?>
+								<p>
+									<?php
+									the_field('company_info_phone', 'option');
+									echo '<br>';
+									$email = get_field('company_info_email', 'option');
+									echo sprintf('<a href="mailto:%s">%s</a>', antispambot( $email ), antispambot($email) );
+									?>
+								</p>
 							</div>
 							<div class="col-sm-3">
 								<h3>Följ oss</h3>
