@@ -20,6 +20,7 @@ wp-content/*
 # Ignore everything in the "plugins" directory, except the plugins you specify
 wp-content/plugins/*
 !wp-content/plugins/advanced-custom-fields-pro/
+!wp-content/plugins/thimar-post-type-brands.php
 
 # Ignore everything in the "themes" directory, except the themes you specify
 wp-content/themes/*
