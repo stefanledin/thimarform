@@ -10,7 +10,7 @@ $class = array(
             <?php while ( have_rows('rows') ) : the_row(); ?>
                 <div class="row no-gutters">
                     <?php if ( have_rows('columns') ) : while ( have_rows('columns') ) : the_row(); ?>
-                        <div class="<?php echo $class[get_row_index()];?> d-flex flex-column justify-content-center">
+                        <div class="<?php echo $class[get_row_index()];?> d-flex flex-column justify-content-center text-center text-sm-left">
                             <?php
                             if (get_sub_field('content_type') == 'image') {
                                 $image = get_sub_field('image');

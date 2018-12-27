@@ -2888,21 +2888,30 @@ h1, .h1 {
   font-weight: normal;
   line-height: 1;
   text-transform: uppercase; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
+    h1, .h1 {
+      font-size: 3.8rem; } }
+  @media (min-width: 1200px) {
     h1, .h1 {
       font-size: 5rem; } }
 
 h2, .h2 {
   font-size: 1.5rem;
   font-weight: 500; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
+    h2, .h2 {
+      font-size: 2.2rem; } }
+  @media (min-width: 1200px) {
     h2, .h2 {
       font-size: 2.8rem; } }
 
 h3, .h3 {
   font-size: 1.3rem;
   font-weight: normal; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
+    h3, .h3 {
+      font-size: 1.5rem; } }
+  @media (min-width: 1200px) {
     h3, .h3 {
       font-size: 1.7rem; } }
 
@@ -3118,6 +3127,15 @@ body.mobile-menu--open {
   @media (min-width: 768px) {
     .site-header__content {
       padding: 15rem 0 0 15rem; } }
+
+/**
+ *
+ * Varumärken
+ *
+ */
+@media (min-width: 1200px) {
+  .brands {
+    padding: 300px 0; } }
 
 /**
  *

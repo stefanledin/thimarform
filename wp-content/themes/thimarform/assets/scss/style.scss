@@ -73,7 +73,11 @@ h1, .h1 {
     line-height: 1;
     text-transform: uppercase;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
+        font-size: 3.8rem; // 80px
+    }
+
+    @include media-breakpoint-up(xl) {
         font-size: 5rem; // 80px
     }
 }
@@ -82,7 +86,11 @@ h2, .h2 {
     font-size: 1.5rem; // 25px
     font-weight: 500;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
+        font-size: 2.2rem; 
+    }
+
+    @include media-breakpoint-up(xl) {
         font-size: 2.8rem; // 45px
     }
 }
@@ -91,7 +99,11 @@ h3, .h3 {
     font-size: 1.3rem; // 21px
     font-weight: normal;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
+        font-size: 1.5rem; // 30px
+    }
+
+    @include media-breakpoint-up(xl) {
         font-size: 1.7rem; // 30px
     }
 }
@@ -145,7 +157,6 @@ img {
     background-size: cover;
     background-position: center center;
 }
-
 
 /**
  *
@@ -244,7 +255,6 @@ img {
         color: $bluegrey-dark;
     }
 }
-
 
 /**
  *
@@ -385,6 +395,18 @@ body.mobile-menu--open {
     }
 }
 
+
+/**
+ *
+ * Varumärken
+ *
+ */
+
+.brands {
+    @include media-breakpoint-up(xl) {
+        padding: 300px 0;
+    }
+}
 
 /**
  *
