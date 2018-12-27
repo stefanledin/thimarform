@@ -2876,6 +2876,15 @@ a.text-dark:hover, a.text-dark:focus {
 .bg-bluegrey-dark {
   background-color: #99b1bc; }
 
+.bg-redbrown-dark {
+  background-color: #8e5959; }
+
+.bg-redbrown-light {
+  background-color: #e3c5bd; }
+
+.bg-black {
+  background-color: black; }
+
 .text-black {
   color: black; }
 
@@ -2943,6 +2952,8 @@ img {
 
 /*----------  Layout  ----------*/
 .site-wrapper {
+  margin: 0 auto;
+  max-width: 1920px;
   position: relative; }
 
 .section-wrapper {

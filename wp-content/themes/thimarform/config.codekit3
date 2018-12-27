@@ -1085,6 +1085,13 @@
 		"oAP": "/sections/blocks.php",
 		"oF": 0
 		},
+	"/sections/news_collage.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/sections/news_collage.php",
+		"oF": 0
+		},
 	"/sections/text_on_background.php": {
 		"cB": 0,
 		"ft": 8192,

@@ -57,6 +57,18 @@ $grey-lightest: #f5f5f5;
     background-color: $bluegrey-dark;
 }
 
+.bg-redbrown-dark {
+    background-color: $redbrown-dark;
+}
+
+.bg-redbrown-light {
+    background-color: $redbrown-light;
+}
+
+.bg-black {
+    background-color: black;
+}
+
 .text-black {
     color: $black;
 }
@@ -148,6 +160,8 @@ img {
 /*----------  Layout  ----------*/
 
 .site-wrapper {
+    margin: 0 auto;
+    max-width: 1920px;
     position: relative;
 }
 
