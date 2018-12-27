@@ -100,6 +100,26 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/assets/img/icon-menu-close.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/icon-menu-close.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/icon-menu.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/icon-menu.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/assets/img/logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -175,7 +195,7 @@
 		"oA": 1,
 		"oAP": "/assets/js/dist/app-min.js",
 		"oF": 1,
-		"sC": 3,
+		"sC": 0,
 		"tS": 0
 		},
 	"/assets/js/src/app.js": {
@@ -185,7 +205,7 @@
 		"oA": 1,
 		"oAP": "/assets/js/src/app-min.js",
 		"oF": 1,
-		"sC": 3,
+		"sC": 0,
 		"tS": 0
 		},
 	"/assets/scss/style.scss": {

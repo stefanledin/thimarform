@@ -1,5 +1,5 @@
 <div class="text-besides-image__content-wrapper bg-bluegrey-light">
-    <div class="text-besides-image__content d-flex flex-column">
+    <div class="text-besides-image__content d-flex flex-column py-4">
         <?php
         if ($headline = get_sub_field('headline')) {
             echo sprintf('<h1 class="text-besides-image__h1 mb-4">%s</h1>', $headline);

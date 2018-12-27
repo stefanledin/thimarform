@@ -2884,18 +2884,27 @@ a.text-dark:hover, a.text-dark:focus {
 
 /*----------  Typografi  ----------*/
 h1, .h1 {
-  font-size: 5rem;
+  font-size: 2.2rem;
   font-weight: normal;
   line-height: 1;
   text-transform: uppercase; }
+  @media (min-width: 768px) {
+    h1, .h1 {
+      font-size: 5rem; } }
 
 h2, .h2 {
-  font-size: 2.8rem;
+  font-size: 1.5rem;
   font-weight: 500; }
+  @media (min-width: 768px) {
+    h2, .h2 {
+      font-size: 2.8rem; } }
 
 h3, .h3 {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-weight: normal; }
+  @media (min-width: 768px) {
+    h3, .h3 {
+      font-size: 1.7rem; } }
 
 /*----------  Element  ----------*/
 a, a:visited {
@@ -2939,9 +2948,9 @@ img {
  *
  */
 .btn-w-arrow {
-  padding: .25rem .25rem .25rem 1.5rem;
+  padding: .25rem .25rem .25rem 1rem;
   border-radius: 5rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1;
   display: flex;
   align-items: center;
@@ -2951,6 +2960,15 @@ img {
     text-decoration: none; }
     .btn-w-arrow:hover .btn-w-arrow__arrow {
       background: #E3C5BD; }
+  .btn-w-arrow svg {
+    width: 15px; }
+    @media (min-width: 768px) {
+      .btn-w-arrow svg {
+        width: 24px; } }
+  @media (min-width: 768px) {
+    .btn-w-arrow {
+      padding: .25rem .25rem .25rem 1.5rem;
+      font-size: 1.2rem; } }
 
 .btn-w-arrow--black {
   background: black;
@@ -2963,12 +2981,15 @@ img {
     color: #99b1bc; }
 
 .btn-w-arrow__label {
-  margin-right: 1rem;
+  margin-right: .5rem;
   display: flex; }
+  @media (min-width: 768px) {
+    .btn-w-arrow__label {
+      margin-right: 1rem; } }
 
 .btn-w-arrow__arrow {
-  width: 3rem;
-  height: 3rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -2976,9 +2997,16 @@ img {
   background: #8e5959; }
   .btn-w-arrow__arrow path {
     fill: white; }
+  @media (min-width: 768px) {
+    .btn-w-arrow__arrow {
+      width: 3rem;
+      height: 3rem; } }
 
 .btn-text-w-arrow {
-  font-size: 1.8rem; }
+  font-size: 1.2rem; }
+  @media (min-width: 768px) {
+    .btn-text-w-arrow {
+      font-size: 1.8rem; } }
 
 .btn-text-w-arrow--black {
   color: black; }
@@ -2992,40 +3020,104 @@ img {
 
 /**
  *
- * Header
+ * Mobilmeny
  *
  */
-.site-navigation {
-  position: absolute;
+body.mobile-menu--open {
+  overflow: hidden; }
+  body.mobile-menu--open .mobile-menu {
+    display: flex; }
+
+.mobile-menu {
+  background: #cfdfe6;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 5; }
+  bottom: 0;
+  z-index: 10;
+  display: none;
+  align-items: center;
+  justify-content: center; }
+  .mobile-menu ul {
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+  .mobile-menu li {
+    list-style-type: none; }
+  .mobile-menu a {
+    font-size: 1.5rem;
+    text-transform: uppercase; }
+    .mobile-menu a:hover, .mobile-menu a.active {
+      color: #8e5959; }
+
+.mobile-menu__close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem; }
+  .mobile-menu__close svg {
+    width: 32px; }
+
+/**
+ *
+ * Header
+ *
+ */
+@media (min-width: 1200px) {
+  .site-navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5; } }
+
+.menu-icon {
+  margin: 2rem 2rem 0 0;
+  width: 48px; }
+  @media (min-width: 1200px) {
+    .menu-icon {
+      display: none; } }
 
 .site-menu {
   margin: 0;
   padding: 0;
   background: rgba(255, 255, 255, 0.75);
-  display: flex;
+  display: none;
   justify-content: space-around;
   align-items: center;
   align-self: flex-start; }
+  @media (min-width: 1200px) {
+    .site-menu {
+      display: flex; } }
   .site-menu li {
     margin: 2.4rem 0;
     list-style-type: none;
     line-height: 1;
     display: inline-block; }
   .site-menu a {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: black; }
 
 .logo {
-  margin: 2rem 0 0 2rem;
-  max-width: 130px;
+  margin: 2rem 0 1rem 2rem;
+  max-width: 74px;
   flex: 1; }
+  @media (min-width: 768px) {
+    .logo {
+      max-width: 130px; } }
 
 .site-header__content {
-  padding: 15rem 0 0 15rem; }
+  padding: 1rem 0; }
+  .site-header__content h1 {
+    padding: 1rem 0 1rem 2rem;
+    background: rgba(255, 255, 255, 0.75); }
+    @media (min-width: 768px) {
+      .site-header__content h1 {
+        padding: 0;
+        background: none; } }
+  @media (min-width: 768px) {
+    .site-header__content {
+      padding: 15rem 0 0 15rem; } }
 
 /**
  *
@@ -3048,9 +3140,12 @@ img {
   overflow: hidden; }
 
 .text-on-background__button {
-  margin: 0 9.5rem 5rem 0;
+  margin: 0 .5rem .5rem 0;
   display: flex;
   align-self: flex-end; }
+  @media (min-width: 768px) {
+    .text-on-background__button {
+      margin: 0 9.5rem 5rem 0; } }
 
 .text-on-background__image {
   position: relative;
@@ -3072,7 +3167,11 @@ img {
   flex-direction: column; }
 
 .text-besides-image__content {
-  max-width: 69.1144708423326%; }
+  max-width: 69.1144708423326%;
+  text-align: center; }
+  @media (min-width: 576px) {
+    .text-besides-image__content {
+      text-align: left; } }
 
 .text-besides-image__h1 {
   font-size: 2.7rem;
@@ -3088,13 +3187,18 @@ img {
   flex: 1; }
 
 .ribbon {
+  padding: 0 .5rem;
   width: 100%;
   background: rgba(255, 255, 255, 0.75); }
   .ribbon h1 {
-    margin: 3rem 0;
-    font-size: 3rem;
+    margin: 1rem 0;
+    font-size: 1.5rem;
     text-align: center;
     line-height: 1; }
+    @media (min-width: 768px) {
+      .ribbon h1 {
+        margin: 3rem 0;
+        font-size: 3rem; } }
   .ribbon.ribbon--w-button {
     padding: 4rem 0; }
     .ribbon.ribbon--w-button h1 {
@@ -3122,7 +3226,7 @@ img {
   z-index: 2;
   text-transform: uppercase;
   font-size: 1.3rem;
-  font-weight: bold; }
+  /*font-weight: bold;*/ }
   .image-with-description__span.image-with-description__span--bottom {
     top: auto;
     bottom: 2.5rem; }
@@ -3141,9 +3245,15 @@ img {
   .site-footer h3 {
     text-transform: uppercase;
     font-weight: normal;
-    font-size: 2.2rem; }
+    font-size: 1.5rem; }
+    @media (min-width: 768px) {
+      .site-footer h3 {
+        font-size: 2.2rem; } }
   .site-footer p {
-    font-size: 1.4rem; }
+    font-size: 1rem; }
+    @media (min-width: 768px) {
+      .site-footer p {
+        font-size: 1.4rem; } }
   .site-footer hr {
     height: 1px;
     background-color: #707070;

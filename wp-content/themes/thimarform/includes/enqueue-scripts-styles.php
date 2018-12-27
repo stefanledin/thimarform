@@ -11,7 +11,8 @@ function enqueue_scripts_and_styles () {
     // wp_enqueue_scripts($handle, $src, $deps, $ver, $in_footer);
     wp_deregister_script( 'wp-embed' );
     wp_deregister_script( 'jquery' );
-    wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-latest.min.js', null, null, true );
+    wp_enqueue_script('app', $assetsDir.'/js/dist/app.js', null, bust_cache('js/dist/app.js'), true);
+    //wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-latest.min.js', null, null, true );
 }
 
 function bust_cache( $file_name ) {
