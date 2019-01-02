@@ -10,7 +10,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<?php wp_head(); ?>
 	</head>
-	<body <?php body_class('p-md-4');?>>
+	<body <?php body_class('px-md-4');?>>
 
 		<nav class="mobile-menu">
 			<div class="mobile-menu__close">

@@ -7,7 +7,7 @@
         if ( isset( $brand_info['text'] ) ) :
         ?>
             <section class="mb-4 text-besides-image bg-grey-light">
-                <div class="row">
+                <div class="row no-gutters">
                     <div class="col-sm-6 d-flex">
                         <div class="text-besides-image__content-wrapper">
                             <div class="text-besides-image__content d-flex flex-column">

@@ -2993,6 +2993,8 @@ img {
 .btn-w-arrow--black {
   background: black;
   color: white; }
+  .btn-w-arrow--black:visited {
+    color: white; }
 
 .btn-w-arrow--white {
   background: white;

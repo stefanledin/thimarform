@@ -211,6 +211,9 @@ img {
 .btn-w-arrow--black {
     background: black;
     color: white;
+    &:visited {
+        color: white;
+    }
 }
 
 .btn-w-arrow--white {
