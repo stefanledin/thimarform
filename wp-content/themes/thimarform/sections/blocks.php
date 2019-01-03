@@ -1,4 +1,4 @@
-<section class="my-4">
+<section class="mb-3">
     <div class="row">
         <?php if ( have_rows('blocks') ) : while ( have_rows('blocks') ) : the_row(); ?>
             <div class="col-md-4">
