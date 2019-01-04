@@ -1,5 +1,5 @@
 <?php if ( have_rows('columns') ) : ?>
-    <section class="mb-3 text-besides-image">
+    <section class="mb-md-3 text-besides-image">
         <div class="row">
             <?php while (have_rows('columns')) : the_row(); ?>
                 <div class="col-sm-6 d-flex <?php echo ( get_row_index() == 1 ) ? 'order-last' : 'order-first';?>">

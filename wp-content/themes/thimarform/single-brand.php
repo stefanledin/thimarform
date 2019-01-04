@@ -6,9 +6,9 @@
         $brand_info = get_field('brand_info');
         if ( isset( $brand_info['text'] ) ) :
         ?>
-            <section class="mb-4 text-besides-image bg-grey-light">
+            <section class="mb-md-4 text-besides-image bg-grey-light">
                 <div class="row no-gutters">
-                    <div class="col-sm-6 d-flex">
+                    <div class="col-sm-6 d-flex order-last py-4">
                         <div class="text-besides-image__content-wrapper">
                             <div class="text-besides-image__content d-flex flex-column">
                                 <?php the_title('<h1 class="mb-4">', '</h1>'); ?>
@@ -16,7 +16,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 d-flex">
+                    <div class="col-sm-6 d-flex order-first">
                         <div><img src="<?php echo $brand_info['image']['url'];?>"></div>
                     </div>
                 </div>

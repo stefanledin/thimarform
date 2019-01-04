@@ -1,4 +1,4 @@
-<section class="mb-3 text-on-background">
+<section class="mb-md-3 text-on-background">
 
     <div class="text-on-background__content">
         <?php if ( $headline = get_sub_field('headline') ) : ?>
