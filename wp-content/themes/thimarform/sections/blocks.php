@@ -1,7 +1,7 @@
 <section class="mb-md-3">
     <div class="row">
         <?php if ( have_rows('blocks') ) : while ( have_rows('blocks') ) : the_row(); ?>
-            <div class="col-md-4">
+            <div data-aos="fade-up" class="col-md-4">
                 <div class="text-on-background">
         
                     <div class="text-on-background__content">

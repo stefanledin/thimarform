@@ -1,3 +1,7 @@
+import AOS from 'aos';
+
+AOS.init();
+
 /**
  *
  * Mobilmeny
@@ -5,7 +9,6 @@
  */
 
 const toggleMobileMenyVisibility = (event) => {
-    console.log(event);
     document.body.classList.toggle('mobile-menu--open');
 }
 const openMobileMenubutton = document.querySelector('svg.menu-icon');

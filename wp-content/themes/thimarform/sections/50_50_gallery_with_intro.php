@@ -13,14 +13,18 @@ $introtext = get_sub_field('introtext');
             <div class="col-12 col-lg-10 offset-lg-1">
                 <div class="row">
                     <?php if ( have_rows('columns') ) : while ( have_rows('columns') ) : the_row(); ?>
-                        <div class="col-sm-6">
+                        <div data-aos="fade-up" class="col-sm-6">
                             <?php
                             /**
                              * Högst upp i första spalten ska introtexten vara.
                              */
                             if ( get_row_index() == 1 ) {
-                                echo sprintf( '<h1 class="mb-4">%s</h1>', $headline );
-                                echo wpautop( $introtext );
+                                echo '<div class="row no-gutters">';
+                                    echo '<div class="col-10 offset-1">';
+                                        echo sprintf( '<h1 class="mb-4">%s</h1>', $headline );
+                                        echo wpautop( $introtext );
+                                    echo '</div>';
+                                echo '</div>';
                             }
     
                             if ( have_rows('rows') ) : while ( have_rows('rows') ) : the_row(); ?>

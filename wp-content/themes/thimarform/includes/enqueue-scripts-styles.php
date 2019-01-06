@@ -6,6 +6,7 @@ function enqueue_scripts_and_styles () {
     $assetsDir = $themeDir . '/assets';
 
     // wp_enqueue_style( $handle, $src, $deps, $ver, $media );
+    wp_enqueue_style( 'aos', $assetsDir.'/css/aos.css', null, null, null );
     wp_enqueue_style( 'stylesheet', $assetsDir.'/css/style.css', null, bust_cache('css/style.css'), null );
 
     // wp_enqueue_scripts($handle, $src, $deps, $ver, $in_footer);

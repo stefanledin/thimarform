@@ -2972,7 +2972,7 @@ img {
   border-radius: 5rem;
   font-size: 1rem;
   line-height: 1;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   align-self: flex-start; }
   .btn-w-arrow:hover {
@@ -3132,11 +3132,11 @@ body.mobile-menu--open {
   .site-header__content h1 {
     padding: 1rem 0 1rem 2rem;
     background: rgba(255, 255, 255, 0.75); }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       .site-header__content h1 {
         padding: 0;
         background: none; } }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     .site-header__content {
       padding: 15rem 0 0 15rem; } }
 
@@ -3196,9 +3196,6 @@ body.mobile-menu--open {
   justify-content: center;
   align-items: center;
   flex-direction: column; }
-
-.text-besides-image__content {
-  max-width: 69.1144708423326%; }
 
 .text-besides-image__h1 {
   font-size: 2.7rem;

@@ -6,17 +6,19 @@ get_header();
 ?>
 
 <?php if ( $header = get_field('news_page_header') ) : ?>
-    <header class="mb-4 text-besides-image">
+    <header data-aos="fade-up" class="mb-4 text-besides-image">
         <div class="row no-gutters">
             <div class="col-sm-6 d-flex order-last order-sm-first">
                 <div class="py-4 text-besides-image__content-wrapper bg-grey-light">
-                    <div class="text-besides-image__content d-flex flex-column">
-                        <?php 
-                        the_title('<h1 class="mb-4">', '</h1>');
-                        if ( $header['introtext'] ) {
-                            echo wpautop( $header['introtext'] );
-                        }
-                        ?>
+                    <div class="row text-besides-image__content d-flex flex-column">
+                        <div class="col-10 offset-1">
+                            <?php 
+                            the_title('<h1 class="mb-4">', '</h1>');
+                            if ( $header['introtext'] ) {
+                                echo wpautop( $header['introtext'] );
+                            }
+                            ?>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -48,7 +50,7 @@ $posts = get_posts( array(
     'posts_per_page' => -1
 ) );
 if ( $posts ) : ?>
-    <section class="mb-4">
+    <section data-aos="fade-up" class="mb-4">
         <div class="row no-gutters">
             <?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
                 <div class="col-sm-4">

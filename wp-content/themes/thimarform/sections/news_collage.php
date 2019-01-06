@@ -1,5 +1,5 @@
 <?php if ( $columns = get_sub_field('news_collage') ) : ?>
-    <section class="mb-md-3">
+    <section data-aos="fade-up" class="mb-md-3">
         <div class="row no-gutters">
             <?php foreach ( $columns as $index => $column ) : ?>
                 <div class="col-md-4">
