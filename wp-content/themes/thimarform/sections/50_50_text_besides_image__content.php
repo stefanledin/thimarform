@@ -1,5 +1,5 @@
 <div class="text-besides-image__content-wrapper bg-bluegrey-light">
-    <div class="row text-besides-image__content d-flex flex-column py-4">
+    <div class="row no-gutters text-besides-image__content d-flex flex-column py-4">
         <div class="col-10 offset-1">
             <?php
             if ($headline = get_sub_field('headline')) {

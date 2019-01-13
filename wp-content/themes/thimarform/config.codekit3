@@ -231,6 +231,13 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/video/thimarlogo_svart.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/assets/video/thimarlogo_svart.mp4",
+		"oF": 0
+		},
 	"/footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1000,13 +1007,6 @@
 		"oO": 0,
 		"oS": 1
 		},
-	"/page-kontakt.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/page-kontakt.php",
-		"oF": 0
-		},
 	"/page-nyheter.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1044,6 +1044,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/search.php",
+		"oF": 0
+		},
+	"/sections/50_50_content_columns.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/sections/50_50_content_columns.php",
 		"oF": 0
 		},
 	"/sections/50_50_gallery_with_intro.php": {
@@ -1095,11 +1102,11 @@
 		"oAP": "/sections/blocks.php",
 		"oF": 0
 		},
-	"/sections/news_collage.php": {
+	"/sections/text_and_button.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/sections/news_collage.php",
+		"oAP": "/sections/text_and_button.php",
 		"oF": 0
 		},
 	"/sections/text_on_background.php": {

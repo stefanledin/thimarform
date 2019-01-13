@@ -2892,6 +2892,10 @@ a.text-dark:hover, a.text-dark:focus {
   color: white; }
 
 /*----------  Typografi  ----------*/
+.wf-futurapt-n4-active body {
+  font-family: 'futura-pt';
+  font-weight: 400; }
+
 h1, .h1 {
   font-size: 2.2rem;
   font-weight: normal;
@@ -2906,7 +2910,11 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: 1.5rem;
-  font-weight: 500; }
+  font-weight: 700;
+  line-height: 1; }
+  .wf-futuraptbold-n7-active h2, .wf-futuraptbold-n7-active .h2 {
+    font-family: 'futura-pt-bold';
+    font-weight: 700; }
   @media (min-width: 992px) {
     h2, .h2 {
       font-size: 2.2rem; } }
@@ -2916,13 +2924,23 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: 1.3rem;
-  font-weight: normal; }
+  font-weight: normal;
+  line-height: 1; }
   @media (min-width: 992px) {
     h3, .h3 {
-      font-size: 1.5rem; } }
+      font-size: 1.7rem; } }
   @media (min-width: 1200px) {
     h3, .h3 {
-      font-size: 1.7rem; } }
+      font-size: 1.9rem; } }
+
+p {
+  font-size: 1rem; }
+  @media (min-width: 992px) {
+    p {
+      font-size: 1.3rem; } }
+  @media (min-width: 1200px) {
+    p {
+      font-size: 1.5rem; } }
 
 /*----------  Element  ----------*/
 a, a:visited {
@@ -2932,7 +2950,8 @@ a:hover {
   color: black;
   text-decoration: underline; }
 
-img {
+img,
+video {
   max-width: 100%;
   height: auto; }
 
@@ -3026,7 +3045,7 @@ img {
 
 .btn-text-w-arrow {
   font-size: 1.2rem; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     .btn-text-w-arrow {
       font-size: 1.8rem; } }
 
@@ -3039,6 +3058,28 @@ img {
   color: #8e5959; }
   .btn-text-w-arrow--burgundy:hover {
     color: #99b1bc; }
+
+/**
+ *
+ * Introfilm
+ *
+ */
+.intro-video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: white;
+  transition: all 1s ease;
+  opacity: 1; }
+  .intro-video.hidden {
+    opacity: 0; }
+  .intro-video video {
+    margin: 0 auto;
+    max-height: 100vh;
+    display: block; }
 
 /**
  *
@@ -3085,46 +3126,66 @@ body.mobile-menu--open {
  * Header
  *
  */
-@media (min-width: 1200px) {
-  .site-navigation {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 5; } }
+.site-navigation {
+  background: white; }
+  @media (min-width: 992px) {
+    .site-navigation {
+      background-color: #eaeaea; } }
+
+.menu-icon__wrapper {
+  position: absolute;
+  top: 0;
+  right: 0; }
+  @media (min-width: 992px) {
+    .menu-icon__wrapper {
+      display: none; } }
 
 .menu-icon {
   margin: 2rem 2rem 0 0;
   width: 48px; }
-  @media (min-width: 1200px) {
-    .menu-icon {
-      display: none; } }
 
 .site-menu {
-  margin: 0;
+  margin: 0 1rem;
   padding: 0;
   display: none;
-  justify-content: space-around;
-  align-items: center;
-  align-self: flex-start; }
-  @media (min-width: 1200px) {
+  text-align: right; }
+  @media (min-width: 992px) {
     .site-menu {
-      display: flex; } }
+      display: block; } }
   .site-menu li {
-    margin: 2.4rem 0;
+    margin: 2.4rem 1rem;
     list-style-type: none;
     line-height: 1;
     display: inline-block; }
   .site-menu a {
-    font-size: 1.2rem;
-    color: black; }
+    font-size: 1.1rem;
+    color: black;
+    text-transform: uppercase; }
+    @media (min-width: 1200px) {
+      .site-menu a {
+        font-size: 1.3rem; } }
+    .wf-futurapt-n4-active .site-menu a {
+      font-family: 'futura-pt';
+      font-weight: 400;
+      font-size: 1.2rem; }
+      @media (min-width: 1200px) {
+        .wf-futurapt-n4-active .site-menu a {
+          font-size: 1.4rem; } }
+    .site-menu a:hover, .site-menu a.active {
+      color: #8e5959;
+      text-decoration: none; }
 
 .logo {
   margin: 2rem 0 1rem 2rem;
+  z-index: 1;
   max-width: 74px;
-  flex: 1; }
-  @media (min-width: 768px) {
+  width: 100%;
+  background: white; }
+  @media (min-width: 992px) {
     .logo {
+      position: absolute;
+      top: 0;
+      left: 0;
       max-width: 100px; } }
 
 .site-header__content {
@@ -3137,6 +3198,9 @@ body.mobile-menu--open {
         padding: 0;
         background: none; } }
   @media (min-width: 992px) {
+    .site-header__content {
+      padding: 10rem 0 0 10rem; } }
+  @media (min-width: 1200px) {
     .site-header__content {
       padding: 15rem 0 0 15rem; } }
 
@@ -3170,10 +3234,10 @@ body.mobile-menu--open {
   overflow: hidden; }
 
 .text-on-background__button {
-  margin: 0 .5rem .5rem 0;
+  margin: 0 0 1rem 0;
   display: flex;
   align-self: center; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     .text-on-background__button {
       margin: 0 9.5rem 5rem 0;
       align-self: flex-end; } }
@@ -3222,12 +3286,21 @@ body.mobile-menu--open {
     font-size: 1.5rem;
     text-align: center;
     line-height: 1; }
+    .wf-futuraptbold-n7-active .ribbon h1 {
+      font-family: 'futura-pt-bold';
+      font-weight: 700; }
     @media (min-width: 768px) {
       .ribbon h1 {
         margin: 3rem 0;
+        font-size: 2rem; } }
+    @media (min-width: 992px) {
+      .ribbon h1 {
         font-size: 3rem; } }
   .ribbon.ribbon--w-button {
-    padding: 4rem 0; }
+    padding: 2rem 0; }
+    @media (min-width: 1200px) {
+      .ribbon.ribbon--w-button {
+        padding: 4rem 0; } }
     .ribbon.ribbon--w-button h1 {
       margin: 0; }
     .ribbon.ribbon--w-button .btn-w-arrow {
@@ -3273,12 +3346,12 @@ body.mobile-menu--open {
     text-transform: uppercase;
     font-weight: normal;
     font-size: 1.5rem; }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       .site-footer h3 {
         font-size: 2.2rem; } }
   .site-footer p {
     font-size: 1rem; }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       .site-footer p {
         font-size: 1.4rem; } }
   .site-footer hr {

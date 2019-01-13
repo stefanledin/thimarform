@@ -1,8 +1,8 @@
 			<footer class="site-footer">
-				<div class="row">
+				<div class="row no-gutters">
 					<div class="col-10 offset-1 py-4">
 						<div class="row">
-							<div class="col-sm-6 col-xl-3">
+							<div class="col-sm-6 col-xl-3 mb-4">
 								<h3>Öppettider</h3>
 								<hr>
 								<?php
@@ -14,7 +14,7 @@
 								);
 								?>
 							</div>
-							<div class="col-sm-6 col-xl-3">
+							<div class="col-sm-6 col-xl-3 mb-4">
 								<h3>Adress</h3>
 								<hr>
 								<?php
@@ -26,7 +26,7 @@
 								);
 								?>
 							</div>
-							<div class="col-sm-6 col-xl-3">
+							<div class="col-sm-6 col-xl-3 mb-4">
 								<h3>Kontakta oss</h3>
 								<hr>
 								<p>
@@ -38,7 +38,7 @@
 									?>
 								</p>
 							</div>
-							<div class="col-sm-6 col-xl-3">
+							<div class="col-sm-6 col-xl-3 mb-4">
 								<h3>Följ oss</h3>
 								<hr>
 								<p>Inspireras via sociala medier, följ oss på Instagram och Facebook.</p>

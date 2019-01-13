@@ -10,7 +10,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<?php wp_head(); ?>
 	</head>
-	<body <?php body_class('px-md-4');?>>
+	<body <?php body_class();?>>
+
+		<?php if ( is_home() || is_front_page() ) : ?>
+			<div class="intro-video">
+				<video src="<?php echo asset('video/thimarlogo_svart.mp4');?>" playsinline autoplay muted></video>
+			</div>
+		<?php endif;?>
 
 		<nav class="mobile-menu">
 			<div class="mobile-menu__close">
@@ -43,13 +49,11 @@
 				
 			<nav class="site-navigation">
 				<div class="row no-gutters">
-					<div class="col-6">
+					<div class="col-12">
 						<div class="logo">
 							<a href="<?php echo home_url();?>"><?php echo file_get_contents(__DIR__.'/assets/img/logo.svg');?></a>
 						</div>
-					</div>
-					<div class="col-6">
-						<div class="d-flex flex-column align-items-end">
+						<div class="menu-icon__wrapper">
 							<svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.111 20.403">
 								<defs>
 									<style>
@@ -72,6 +76,7 @@
 						echo ob_nav_menu( array(
 							'menu_name' => 'Huvudmeny',
 							'menu_class' => 'site-menu',
+							'active_a_class' => 'active'
 						) );
 						?>
 					</div>

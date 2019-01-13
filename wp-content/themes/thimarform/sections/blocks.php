@@ -1,5 +1,5 @@
-<section class="mb-md-3">
-    <div class="row">
+<section class="mb-3">
+    <div class="row no-gutters">
         <?php if ( have_rows('blocks') ) : while ( have_rows('blocks') ) : the_row(); ?>
             <div data-aos="fade-up" class="col-md-4">
                 <div class="text-on-background">
@@ -23,7 +23,18 @@
             
                     <?php if ( $background = get_sub_field('background_image') ) : ?>
                         <div class="text-on-background__image">
-                            <img src="<?php echo $background['url']; ?>" alt="Promo">
+                            <?php
+                            echo sprintf(
+                                '<img src="%s" srcset="%s" sizes="(min-width: 1920px) 634px, (min-width: 768px) 33vw, 100vw">',
+                                $background['url'],
+                                wp_calculate_image_srcset(
+                                    array( $background['width'], $background['height'] ),
+                                    $background['url'],
+                                    wp_get_attachment_metadata( $background['ID'] ),
+                                    $background['ID']
+                                )
+                            )
+                            ?>
                         </div>
                     <?php endif; ?>
             

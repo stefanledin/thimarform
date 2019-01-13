@@ -1,6 +1,38 @@
+const WebFont = require('webfontloader');
 import AOS from 'aos';
 
 AOS.init();
+
+
+/**
+ *
+ * Typsnitt
+ *
+ */
+
+WebFont.load({
+    typekit: {
+        id: 'fmh7rug'
+    }
+});
+
+
+/**
+ *
+ * Introofilm
+ *
+ */
+
+const introVideo = document.querySelector('.intro-video');
+if (introVideo) {
+    const video = introVideo.querySelector('video');
+    video.addEventListener('ended', event => {
+        introVideo.classList.add('hidden');
+        setTimeout(() => {
+            introVideo.remove();
+        }, 1000);
+    });
+}
 
 /**
  *

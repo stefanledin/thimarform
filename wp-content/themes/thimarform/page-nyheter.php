@@ -35,7 +35,19 @@ get_header();
                     </div>
 
                     <div class="text-on-background__image">
-                        <img src="<?php echo $header['block']['background_image']['url'];?>" alt="<?php echo $header['block']['background_image']['alt'];?>">
+                        <?php
+                        echo sprintf(
+                            '<img src="%s" srcset="%s" sizes="(min-width: 1920px) 944px, (min-width: 576px) 50vw, 100vw" alt="%s">',
+                            $header['block']['background_image']['sizes']['thumbnail'],
+                            wp_calculate_image_srcset(
+                                array($header['block']['background_image']['width'], $header['block']['background_image']['height']),
+                                $header['block']['background_image']['url'],
+                                wp_get_attachment_metadata($header['block']['background_image']['ID']),
+                                $header['block']['background_image']['ID']
+                            ),
+                            $header['block']['background_image']['alt']
+                        );
+                        ?>
                     </div>
                 </div>
             </div>
@@ -53,13 +65,28 @@ if ( $posts ) : ?>
     <section data-aos="fade-up" class="mb-4">
         <div class="row no-gutters">
             <?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
-                <div class="col-sm-4">
+                <div class="col-sm-6 col-md-4">
                     <div class="image-with-description">
                         <span class="image-with-description__span text-white">
                             <time><?php the_time('Y-m-d'); ?></time><br>
                             <?php the_title();?>
                         </span>
-                        <?php the_post_thumbnail();?>
+                        <?php
+                        $thumbnail = wp_get_attachment_metadata( get_post_thumbnail_id() );
+                        echo sprintf(
+                            '<img src="%s" srcset="%s" sizes="%s" alt="%s">',
+                            get_thumbnail_url( $post->ID ),
+                            wp_calculate_image_srcset(
+                                array( $thumbnail['width'], $thumbnail['height'] ),
+                                get_thumbnail_url( $post->ID ),
+                                $thumbnail,
+                                get_post_thumbnail_id( $post->ID )
+                            ),
+                            '(min-width: 1920px) 640px, (min-width: 768px) 33vw, (min-width: 576px) 50vw, 100vw',
+                            get_the_title()
+
+                        );
+                        ?>
                     </div>
                 </div>
             <?php wp_reset_postdata(); endforeach;?>
