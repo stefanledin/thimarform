@@ -68,7 +68,6 @@ if ( $posts ) : ?>
                 <div class="col-sm-6 col-md-4">
                     <div class="image-with-description">
                         <span class="image-with-description__span text-white">
-                            <time><?php the_time('Y-m-d'); ?></time><br>
                             <?php the_title();?>
                         </span>
                         <?php

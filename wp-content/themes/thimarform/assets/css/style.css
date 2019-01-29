@@ -2892,15 +2892,16 @@ a.text-dark:hover, a.text-dark:focus {
   color: white; }
 
 /*----------  Typografi  ----------*/
-.wf-futurapt-n4-active body {
-  font-family: 'futura-pt';
+body {
   font-weight: 400; }
+  .wf-futurapt-n4-active body {
+    font-family: 'futura-pt';
+    font-weight: 400; }
 
 h1, .h1 {
   font-size: 2.2rem;
-  font-weight: normal;
-  line-height: 1;
-  text-transform: uppercase; }
+  font-weight: 300;
+  line-height: 1; }
   @media (min-width: 992px) {
     h1, .h1 {
       font-size: 3.8rem; } }
@@ -2924,7 +2925,7 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: 1.3rem;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1; }
   @media (min-width: 992px) {
     h3, .h3 {
@@ -3071,6 +3072,7 @@ video {
   left: 0;
   right: 0;
   z-index: 10;
+  display: flex;
   background: white;
   transition: all 1s ease;
   opacity: 1; }
@@ -3078,6 +3080,7 @@ video {
     opacity: 0; }
   .intro-video video {
     margin: 0 auto;
+    max-width: 320px;
     max-height: 100vh;
     display: block; }
 
@@ -3160,7 +3163,8 @@ body.mobile-menu--open {
   .site-menu a {
     font-size: 1.1rem;
     color: black;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: 700; }
     @media (min-width: 1200px) {
       .site-menu a {
         font-size: 1.3rem; } }
@@ -3177,7 +3181,7 @@ body.mobile-menu--open {
 
 .logo {
   margin: 2rem 0 1rem 2rem;
-  z-index: 1;
+  z-index: 10;
   max-width: 74px;
   width: 100%;
   background: white; }
@@ -3280,7 +3284,7 @@ body.mobile-menu--open {
 .ribbon {
   padding: 0 .5rem;
   width: 100%;
-  background: rgba(255, 255, 255, 0.75); }
+  /*background: rgba(255, 255, 255, .75);*/ }
   .ribbon h1 {
     margin: 1rem 0;
     font-size: 1.5rem;

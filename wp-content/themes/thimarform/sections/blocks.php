@@ -1,7 +1,7 @@
 <section class="mb-3">
-    <div class="row no-gutters">
+    <div class="row no-gutters px-sm-1">
         <?php if ( have_rows('blocks') ) : while ( have_rows('blocks') ) : the_row(); ?>
-            <div data-aos="fade-up" class="col-md-4">
+            <div data-aos="fade-up" class="col-md-4 px-sm-2">
                 <div class="text-on-background">
         
                     <div class="text-on-background__content">
