@@ -26,8 +26,8 @@
                             "key": "field_5bfb02b4efadb",
                             "label": "Bakgrundsbild",
                             "name": "background_image",
-                            "type": "image",
-                            "instructions": "",
+                            "type": "group",
+                            "instructions": "Om bild för liten skärm saknas så kommer den stora användas.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -35,16 +35,57 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "array",
-                            "preview_size": "thumbnail",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
+                            "layout": "table",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5c55640032ce8",
+                                    "label": "Stor skärm",
+                                    "name": "large",
+                                    "type": "image",
+                                    "instructions": "Storlek: 1920px bred",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_5c55640d32ce9",
+                                    "label": "Liten skärm",
+                                    "name": "small",
+                                    "type": "image",
+                                    "instructions": "Storlek: 1534x1534px",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                }
+                            ]
                         },
                         {
                             "key": "field_5bfb02c1efadc",
@@ -1264,175 +1305,6 @@
                     ],
                     "min": "",
                     "max": ""
-                },
-                "layout_5c3b598da4674": {
-                    "key": "layout_5c3b598da4674",
-                    "name": "text_and_button",
-                    "label": "Textrad och knapp",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5c3b59cba4675",
-                            "label": "Text",
-                            "name": "text",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5c3b59d0a4676",
-                            "label": "Knapp",
-                            "name": "button",
-                            "type": "group",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "layout": "block",
-                            "sub_fields": [
-                                {
-                                    "key": "field_5c3b5a26a4678",
-                                    "label": "Utseende",
-                                    "name": "appearance",
-                                    "type": "group",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "layout": "table",
-                                    "sub_fields": [
-                                        {
-                                            "key": "field_5c3b5b97a4605",
-                                            "label": "Typ",
-                                            "name": "type",
-                                            "type": "select",
-                                            "instructions": "",
-                                            "required": 0,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "choices": {
-                                                "button_with_arrow": "Rundad knapp med pil",
-                                                "text_with_arrow": "Pil och text"
-                                            },
-                                            "default_value": [],
-                                            "allow_null": 0,
-                                            "multiple": 0,
-                                            "ui": 0,
-                                            "return_format": "value",
-                                            "ajax": 0,
-                                            "placeholder": ""
-                                        },
-                                        {
-                                            "key": "field_5c3b5bb3a4606",
-                                            "label": "Färg",
-                                            "name": "button_with_arrow_color",
-                                            "type": "select",
-                                            "instructions": "",
-                                            "required": 0,
-                                            "conditional_logic": [
-                                                [
-                                                    {
-                                                        "field": "field_5c3b5b97a4605",
-                                                        "operator": "==",
-                                                        "value": "button_with_arrow"
-                                                    }
-                                                ]
-                                            ],
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "choices": {
-                                                "btn-w-arrow--black": "Svart",
-                                                "btn-w-arrow--white": "Vit"
-                                            },
-                                            "default_value": [],
-                                            "allow_null": 0,
-                                            "multiple": 0,
-                                            "ui": 0,
-                                            "return_format": "value",
-                                            "ajax": 0,
-                                            "placeholder": ""
-                                        },
-                                        {
-                                            "key": "field_5c3b5bb8a4607",
-                                            "label": "Färg",
-                                            "name": "text_with_arrow_color",
-                                            "type": "select",
-                                            "instructions": "",
-                                            "required": 0,
-                                            "conditional_logic": [
-                                                [
-                                                    {
-                                                        "field": "field_5c3b5b97a4605",
-                                                        "operator": "==",
-                                                        "value": "text_with_arrow"
-                                                    }
-                                                ]
-                                            ],
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "choices": {
-                                                "btn-text-w-arrow--black": "Svart",
-                                                "btn-text-w-arrow--burgundy": "Burgundy"
-                                            },
-                                            "default_value": [],
-                                            "allow_null": 0,
-                                            "multiple": 0,
-                                            "ui": 0,
-                                            "return_format": "value",
-                                            "ajax": 0,
-                                            "placeholder": ""
-                                        }
-                                    ]
-                                },
-                                {
-                                    "key": "field_5c3b5a03a4677",
-                                    "label": "Länk",
-                                    "name": "link",
-                                    "type": "link",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "return_format": "array"
-                                }
-                            ]
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
                 }
             },
             "button_label": "Lägg till sektion",
@@ -1449,7 +1321,7 @@
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 1,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -1459,5 +1331,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1547395400
+    "modified": 1549802807
 }

@@ -13,7 +13,12 @@ get_header();
                     <div class="row text-besides-image__content d-flex flex-column">
                         <div class="col-10 offset-1">
                             <?php 
-                            the_title('<h1 class="mb-4">', '</h1>');
+                            echo sprintf(
+                                '<h1 class="mb-4">%s</h1>',
+                                ( ! empty( $header['headline'] ) )
+                                    ? $header['headline']
+                                    : get_the_title()
+                            );
                             if ( $header['introtext'] ) {
                                 echo wpautop( $header['introtext'] );
                             }
@@ -27,7 +32,7 @@ get_header();
                 <div class="text-on-background">
 
                     <div class="text-on-background__content">
-                        <div class="ribbon-wrapper">
+                        <div class="ribbon-wrapper ribbon-wrapper--optical-center">
                             <div class="ribbon">
                                 <?php echo '<h1>' . $header['block']['headline'] . '</h1>';?>
                             </div>
@@ -63,9 +68,9 @@ $posts = get_posts( array(
 ) );
 if ( $posts ) : ?>
     <section data-aos="fade-up" class="mb-4">
-        <div class="row no-gutters">
+        <div class="row no-gutters px-sm-1">
             <?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-6 col-md-4 px-sm-2">
                     <div class="image-with-description">
                         <span class="image-with-description__span text-white">
                             <?php the_title();?>

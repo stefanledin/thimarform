@@ -56,14 +56,30 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/acf-json/group_5c6019f4902f2.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5c6019f4902f2-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/acf-json/group_5c601ab356d5f.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5c601ab356d5f-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/assets/css/aos.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/assets/css/aos-min.css",
-		"oF": 1,
+		"oF": 0,
 		"oS": 3
 		},
 	"/assets/css/style.css": {
@@ -81,13 +97,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/assets/css/style.css.map",
-		"oF": 0
-		},
-	"/assets/img/.gitkeep": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/assets/img/.gitkeep",
 		"oF": 0
 		},
 	"/assets/img/icon-facebook.svg": {
@@ -142,7 +151,7 @@
 		},
 	"/assets/img/skiss-2col.jpg": {
 		"ft": 16384,
-		"iS": 466709,
+		"iS": 143376,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/assets/img/skiss-2col.jpg",
@@ -153,7 +162,7 @@
 		},
 	"/assets/img/skiss-header.jpg": {
 		"ft": 16384,
-		"iS": 2122913,
+		"iS": 1836324,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/assets/img/skiss-header.jpg",
@@ -191,12 +200,15 @@
 		"oAP": "/assets/index.php",
 		"oF": 0
 		},
-	"/assets/js/.gitkeep": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "/assets/js/.gitkeep",
-		"oF": 1
+	"/assets/js/dist/app-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/assets/js/dist/app-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/assets/js/dist/app.js": {
 		"ft": 64,
@@ -224,7 +236,7 @@
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 1,
+		"ma": 0,
 		"oA": 0,
 		"oAP": "/assets/css/style.css",
 		"oF": 2,
@@ -1122,6 +1134,16 @@
 		"oA": 0,
 		"oAP": "/single-brand.php",
 		"oF": 0
+		},
+	"/style-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style-min-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/style.css": {
 		"aP": 1,

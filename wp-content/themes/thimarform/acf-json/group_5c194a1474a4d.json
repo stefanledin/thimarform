@@ -18,10 +18,10 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_5c194b796079e",
-                    "label": "Introtext",
-                    "name": "introtext",
-                    "type": "textarea",
+                    "key": "field_5c601941c7110",
+                    "label": "Rubrik",
+                    "name": "headline",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -32,9 +32,28 @@
                     },
                     "default_value": "",
                     "placeholder": "",
-                    "maxlength": "",
-                    "rows": 3,
-                    "new_lines": ""
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5c194b796079e",
+                    "label": "Introtext",
+                    "name": "introtext",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
                 },
                 {
                     "key": "field_5c194b8c6079f",
@@ -118,5 +137,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1545161871
+    "modified": 1549801803
 }

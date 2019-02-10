@@ -13,7 +13,14 @@ $brands_ordered_by_first_letter = get_brands_by_first_letter();
                 <div class="row no-gutters">
                     <div class="col-sm-10 offset-sm-1 mb-5">
                         <?php the_post();?>
-                        <h1 class="mt-4 text-center">Varumärken</h1>
+                        <?php 
+                        echo sprintf(
+                            '<h1 class="mt-4 text-center">%s</h1>',
+                            ( $headline = get_field('page_headline') )
+                                ? $headline
+                                : get_the_title()
+                        );
+                        ?>
                         <div class="my-4">
                             <?php the_content();?>
                         </div>

@@ -1,6 +1,6 @@
 <section data-aos="fade-up" class="my-5">
     <div class="row no-gutters pt-md-5">
-        <div class="col-10 offset-1 mb-4">
+        <div class="col-10 offset-1 mb-2">
             <?php
             echo sprintf(
                 '<h1>%s</h1>', 

@@ -3,7 +3,7 @@
         <div class="col-10 offset-1">
             <?php
             if ($headline = get_sub_field('headline')) {
-                echo sprintf('<h1 class="text-besides-image__h1 mb-4">%s</h1>', $headline);
+                echo sprintf('<h2 class="text-besides-image__h2 mb-4">%s</h2>', $headline);
             }
             if ($text = get_sub_field('text')) {
                 echo wpautop($text);

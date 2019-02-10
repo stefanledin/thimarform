@@ -1,3 +1,21 @@
+			<?php if ( $cta_text = get_field('cta_text') ) : ?>
+				<div class="row no-gutters">
+					<div class="col-10 offset-1">
+						<div class="text-center mt-4">
+							<?php echo wpautop( $cta_text ); ?>
+						</div>
+						<?php
+						$cta_button = get_field('cta_button');
+						if ( ! empty( $cta_button['link'] ) ) :
+						?>
+							<div class="text-center mb-4">
+								<?php the_button( $cta_button ); ?>
+							</div>
+						<?php endif; ?>
+					</div>
+				</div>
+			<?php endif;?>
+
 			<footer class="site-footer">
 				<div class="row no-gutters">
 					<div class="col-10 offset-1 py-4">
@@ -8,7 +26,7 @@
 								<?php
 								$opening_hours = get_field('company_info_opening_hours', 'option');
 								echo sprintf(
-									'<p><span class="text-uppercase">Butiken</span><br>%s</p><p><span class="text-uppercase">Hämtlager</span><br>%s</p>',
+									'<p><span class="text-uppercase">Butik</span><br>%s</p><p><span class="text-uppercase">Hämtlager</span><br>%s</p>',
 									$opening_hours['store'],
 									$opening_hours['warehouse']
 								);
@@ -20,14 +38,14 @@
 								<?php
 								$address = get_field('company_info_address', 'option');
 								echo sprintf(
-									'<p><span class="text-uppercase">Butiken</span><br>%s</p><p><span class="text-uppercase">Hämtlager</span><br>%s</p>',
+									'<p><span class="text-uppercase">Butik</span><br>%s</p><p><span class="text-uppercase">Hämtlager</span><br>%s</p>',
 									$address['store'],
 									$address['warehouse']
 								);
 								?>
 							</div>
 							<div class="col-sm-6 col-xl-3 mb-4">
-								<h3>Kontakta oss</h3>
+								<h3>Kontakt</h3>
 								<hr>
 								<p>
 									<?php
@@ -39,9 +57,9 @@
 								</p>
 							</div>
 							<div class="col-sm-6 col-xl-3 mb-4">
-								<h3>Följ oss</h3>
+								<h3>Socialt</h3>
 								<hr>
-								<p>Inspireras via sociala medier, följ oss på Instagram och Facebook.</p>
+								<p>Inspireras på Instagram och Facebook.</p>
 								<div class="d-flex justify-content-center">
 									<div class="social-media-icon social-media-icon--instagram">
 										<a href="<?php the_field('company_info_instagram', 'option');?>" target="_blank"><?php echo file_get_contents(__DIR__.'/assets/img/icon-instagram.svg');?></a>
