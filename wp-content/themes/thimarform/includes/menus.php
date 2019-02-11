@@ -275,9 +275,11 @@ function get_page_parent_id($post, $ignore_level = 0)
 	return $parent_id;
 }
 
-function is_current_menu_item($id)
-{
+function is_current_menu_item($id) {
 	global $post;
+	if ( ! $post ) {
+		return false;
+	}
 	$ancestors = get_post_ancestors($post);
 	return (($id == $post->ID) || ($id == $post->post_parent) || ($id == end($ancestors)));
 }

@@ -2902,13 +2902,23 @@ body {
 h1, .h1 {
   font-size: 2.2rem;
   font-weight: 300;
-  line-height: 1; }
+  line-height: 1;
+  /**
+     *
+     * Används bara på 404-sidan
+     *
+     */ }
   @media (min-width: 992px) {
     h1, .h1 {
       font-size: 3.8rem; } }
   @media (min-width: 1200px) {
     h1, .h1 {
       font-size: 4rem; } }
+  h1.h1--deluxe, .h1.h1--deluxe {
+    font-size: 5rem; }
+    @media (min-width: 768px) {
+      h1.h1--deluxe, .h1.h1--deluxe {
+        font-size: 10rem; } }
 
 h2, .h2 {
   font-size: 1.5rem;

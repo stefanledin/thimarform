@@ -114,6 +114,19 @@ h1, .h1 {
     @include media-breakpoint-up(xl) {
         font-size: 4rem; 
     }
+
+    
+    /**
+     *
+     * Används bara på 404-sidan
+     *
+     */
+    &.h1--deluxe {
+        font-size: 5rem;
+        @include media-breakpoint-up(md) {
+            font-size: 10rem;
+        }
+    }
 }
 
 h2, .h2 {

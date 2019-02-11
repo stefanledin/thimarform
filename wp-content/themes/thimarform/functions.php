@@ -28,10 +28,16 @@ require 'includes/helpers.php';
 /**
  * Settings pages
  */
-acf_add_options_page(array(
+acf_add_options_page( array(
+    'page_title' => 'Sajtinställningar',
+    'menu_title' => 'Sajtinställningar',
+    'icon_url' => ''
+) );
+acf_add_options_page( array(
     'page_title' => 'Företagsinformation',
-    'menu_title' => 'Företagsinfo'
-));
+    'menu_title' => 'Företagsinfo',
+    'icon_url' => 'dashicons-businessman'
+) );
 
 /**
  * Knappar
