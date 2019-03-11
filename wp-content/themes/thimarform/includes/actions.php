@@ -1,4 +1,8 @@
 <?php
+add_action('init', function() {
+	setcookie('thimar_visited', true, time()+60*60);
+});
+
 /**
  * Remove emojis
  */
