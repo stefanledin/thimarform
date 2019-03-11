@@ -895,6 +895,33 @@
                             "maxlength": ""
                         },
                         {
+                            "key": "field_5c869194a60ae",
+                            "label": "Rubrikfärg",
+                            "name": "headline_color",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "text-black": "Svart",
+                                "text-white": "Vit"
+                            },
+                            "default_value": [
+                                "text-black"
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
                             "key": "field_5bfaf608eefe4",
                             "label": "Lägg till knapp",
                             "name": "has_button",
@@ -1331,5 +1358,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1549802807
+    "modified": 1552324405
 }

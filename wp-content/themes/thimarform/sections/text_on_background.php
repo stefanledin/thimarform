@@ -4,7 +4,9 @@
         <?php if ( $headline = get_sub_field('headline') ) : ?>
             <div class="ribbon-wrapper">
                 <div class="ribbon">
-                    <h1><?php echo $headline;?></h1>
+                    <?php
+                    echo sprintf('<h1 class="%s">%s</h1>', get_sub_field('headline_color'), $headline);
+                    ?>
                 </div>
             </div>
         <?php endif; ?>

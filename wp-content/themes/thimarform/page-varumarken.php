@@ -31,7 +31,7 @@ $brands_ordered_by_first_letter = get_brands_by_first_letter();
                         <div class="col-md-4">
                             <?php
                             foreach ( $column as $first_letter => $brands ) {
-                                echo '<ul class="list-group"><li class="list-group__header">'.$brands[0]->post_title[0].'</li>';
+                                echo '<ul class="list-group"><li class="list-group__header">'.mb_substr($brands[0]->post_title, 0, 1).'</li>';
                                 foreach ($brands as $brand) {
                                     echo sprintf(
                                         '<li class="list-group__item"><a href="%s">%s</a></li>',

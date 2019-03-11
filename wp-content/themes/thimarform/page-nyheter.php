@@ -70,9 +70,14 @@ if ( $posts ) : ?>
     <section data-aos="fade-up" class="mb-4">
         <div class="row no-gutters px-sm-1">
             <?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
-                <div class="col-sm-6 col-md-4 px-sm-2">
+                <div class="col-sm-6 col-md-4">
+                    <?php
+                    if ( $link_to_brand = get_field('news_links_to_brand') ) {
+                        echo sprintf('<a href="%s">', get_permalink( $link_to_brand->ID));
+                    }
+                    ?>
                     <div class="image-with-description">
-                        <span class="image-with-description__span text-white">
+                        <span class="image-with-description__span <?php the_field('news_headline_color');?>">
                             <?php the_title();?>
                         </span>
                         <?php
@@ -92,6 +97,11 @@ if ( $posts ) : ?>
                         );
                         ?>
                     </div>
+                    <?php
+                    if ( $link_to_brand ) {
+                        echo '</a>';
+                    }
+                    ?>
                 </div>
             <?php wp_reset_postdata(); endforeach;?>
         </div>
