@@ -40,11 +40,11 @@
 
         <?php if ( $products = get_field('brand_products') ) : ?>
             <section class="mb-4">
-                <div class="row no-gutters">
+                <div class="row no-gutters px-sm-1">
                     <?php foreach ( $products as $product ) : ?>
                         <div data-aos="fade-up" class="col-sm-6 col-md-4">
                             <div class="image-with-description">
-                                <span class="image-with-description__span image-with-description__span--bottom text-black"><?php echo $product['name'];?></span>
+                                <span class="image-with-description__span text-black"><?php echo $product['name'];?></span>
                                 <?php
                                 echo sprintf(
                                     '<img src="%s" srcset="%s" sizes="%s" alt="%s">',
@@ -55,7 +55,7 @@
                                         wp_get_attachment_metadata( $product['image']['ID'] ),
                                         $product['image']['ID']
                                     ),
-                                    '(min-width: 1920px) 623px, (min-width: 768px) 33vw, (min-width: 576px) 50vw, 100vw',
+                                    '(min-width: 1920px) 623px, (min-width: 768px) 33.333vw, (min-width: 576px) 50vw, 100vw',
                                     $product['name']
                                 );
                                 ?>

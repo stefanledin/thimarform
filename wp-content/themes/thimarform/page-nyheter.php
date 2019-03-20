@@ -91,7 +91,7 @@ if ( $posts ) : ?>
                                 $thumbnail,
                                 get_post_thumbnail_id( $post->ID )
                             ),
-                            '(min-width: 1920px) 640px, (min-width: 768px) 33vw, (min-width: 576px) 50vw, 100vw',
+                            '(min-width: 1920px) 640px, (min-width: 768px) 33.333vw, (min-width: 576px) 50vw, 100vw',
                             get_the_title()
 
                         );

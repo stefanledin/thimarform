@@ -3,6 +3,30 @@
     "title": 404,
     "fields": [
         {
+            "key": "field_5c8d1a36a0258",
+            "label": "Bakgrundsbild på 404-sidan",
+            "name": "404_background",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_5c61b923f3539",
             "label": "Meddelande på 404-sidan",
             "name": "404_message",
@@ -39,5 +63,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1549908507
+    "modified": 1552751182
 }

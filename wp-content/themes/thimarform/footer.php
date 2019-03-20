@@ -1,8 +1,11 @@
-			<?php if ( $cta_text = get_field('cta_text') ) : ?>
-				<div class="row no-gutters">
+				<div class="cta row no-gutters">
 					<div class="col-10 offset-1">
 						<div class="text-center mt-4">
-							<?php echo wpautop( $cta_text ); ?>
+							<?php
+							if ( $cta_text = get_field('cta_text') ) {
+								echo wpautop( $cta_text );
+							}
+							?>
 						</div>
 						<?php
 						$cta_button = get_field('cta_button');
@@ -14,7 +17,6 @@
 						<?php endif; ?>
 					</div>
 				</div>
-			<?php endif;?>
 
 			<footer class="site-footer">
 				<div class="row no-gutters">

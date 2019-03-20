@@ -100,6 +100,7 @@ body {
     @include futura-pt();
     font-weight: 400;
     line-height: 1.3;
+    background: $grey-lightest;
 }
 
 h1, .h1 {
@@ -144,10 +145,10 @@ h3, .h3 {
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     
     @include media-breakpoint-up(lg) {
-        font-size: 1.3rem; 
+        font-size: 1.2rem; 
     }
 
 }
@@ -192,12 +193,12 @@ video {
     margin: 0 auto;
     max-width: 1920px;
     position: relative;
+    background: white;
 }
 
 .billboard {
     width: 100%;
     height: 100vh;
-    max-height: 900px;
     background-size: cover;
     background-position: center center;
 }
@@ -283,10 +284,6 @@ video {
 
 .btn-text-w-arrow {
     font-size: 1.2rem;
-
-    @include media-breakpoint-up(lg) {
-        font-size: 1.8rem;
-    }
 }
 
 .btn-text-w-arrow--black {
@@ -478,6 +475,8 @@ body.mobile-menu--open {
 
 .site-header__content {
     padding: 7rem 0 0 0;
+    position: absolute;
+    z-index: 2;
 
     h1 {
         padding: 1rem 0 1rem 2rem;
@@ -497,6 +496,11 @@ body.mobile-menu--open {
     }
 }
 
+.site-header__image {
+    position: relative;
+    z-index: 1;
+}
+
 
 /**
  *
@@ -506,7 +510,7 @@ body.mobile-menu--open {
 
 .brands {
     @include media-breakpoint-up(xl) {
-        padding: 300px 0;
+        padding: 200px 0;
     }
 }
 
@@ -533,7 +537,7 @@ body.mobile-menu--open {
 }
 
 .text-on-background__button {
-    margin: 0 0 1rem 0;
+    margin: 0 0 1.5rem 0;
     display: flex;
     align-self: center;
 
@@ -567,8 +571,12 @@ body.mobile-menu--open {
 }
 
 .text-besides-image__h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 1.2;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 2rem;
+    }
 }
 
 .text-besides-image__button-wrapper {
@@ -614,7 +622,11 @@ body.mobile-menu--open {
 
     &.ribbon--small {
         h1 {
-            font-size: 2.5rem;
+            font-size: 1.5rem;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 2.1rem;
+            }
         }
     }
 
@@ -672,6 +684,12 @@ body.mobile-menu--open {
  *
  */
 
+.cta {
+    p {
+        font-size: 0.9rem;
+    }
+}
+
 .site-footer {
     background: $grey-light;
     color: #888888;
@@ -683,19 +701,10 @@ body.mobile-menu--open {
         text-transform: uppercase;
         font-weight: normal;
         font-size: 1.5rem;
-        @include media-breakpoint-up(lg) {
-            font-size: 2rem;
-        }
-        @include media-breakpoint-up(xl) {
-            font-size: 1.8rem;
-        }
     }
     p {
         font-size: 1rem;
         line-height: 1.3;
-        @include media-breakpoint-up(lg) {
-            font-size: 1.2rem;
-        }
     }
     hr {
         height: 1px;
