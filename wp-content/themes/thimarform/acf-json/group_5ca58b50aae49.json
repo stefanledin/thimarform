@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_5ca58b50b8566",
-            "label": "Sidhuvud",
+            "label": "Innehåll",
             "name": "page_header",
             "type": "group",
             "instructions": "",
@@ -127,7 +127,7 @@
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 1,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -137,5 +137,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1554353231
+    "modified": 1554360810
 }

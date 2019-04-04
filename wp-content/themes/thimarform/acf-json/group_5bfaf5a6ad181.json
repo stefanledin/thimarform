@@ -19,7 +19,7 @@
                 "5bfb02aeefada": {
                     "key": "5bfb02aeefada",
                     "name": "billboard",
-                    "label": "Sidhuvud",
+                    "label": "Banderoll",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -1510,6 +1510,35 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_5ca5a4ff7e726": {
+                    "key": "layout_5ca5a4ff7e726",
+                    "name": "content",
+                    "label": "Innehåll",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ca5a50f7e727",
+                            "label": "Innehåll",
+                            "name": "content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Lägg till sektion",
@@ -1520,13 +1549,20 @@
     "location": [
         [
             {
-                "param": "post_template",
+                "param": "post_type",
                 "operator": "==",
-                "value": "index.php"
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "brand"
             }
         ]
     ],
-    "menu_order": 1,
+    "menu_order": 3,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -1536,5 +1572,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1553196231
+    "modified": 1554361336
 }

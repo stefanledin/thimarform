@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<?php if ( $header = get_field('news_page_header') ) : ?>
+<?php if ( $header = get_field('page_header') ) : ?>
     <header data-aos="fade-up" class="mb-4 text-besides-image">
         <div class="row no-gutters">
             <div class="col-sm-6 d-flex order-last order-sm-first">
@@ -57,50 +57,12 @@
 <?php endif; ?>
 
 <?php
-$posts = get_posts( array(
-    'post_type' => 'post',
-    'posts_per_page' => -1
-) );
-if ( $posts ) : ?>
-    <section data-aos="fade-up" class="mb-4">
-        <div class="row no-gutters">
-            <?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
-                <div class="col-sm-6 col-md-4">
-                    <?php
-                    if ( $link_to_brand = get_field('news_links_to_brand') ) {
-                        echo sprintf('<a href="%s">', get_permalink( $link_to_brand->ID));
-                    }
-                    ?>
-                    <div class="image-with-description">
-                        <span class="image-with-description__span <?php the_field('news_headline_color');?>">
-                            <?php the_title();?>
-                        </span>
-                        <?php
-                        $thumbnail = wp_get_attachment_metadata( get_post_thumbnail_id() );
-                        echo sprintf(
-                            '<img src="%s" srcset="%s" sizes="%s" alt="%s">',
-                            get_thumbnail_url( $post->ID ),
-                            wp_calculate_image_srcset(
-                                array( $thumbnail['width'], $thumbnail['height'] ),
-                                get_thumbnail_url( $post->ID ),
-                                $thumbnail,
-                                get_post_thumbnail_id( $post->ID )
-                            ),
-                            '(min-width: 1920px) 640px, (min-width: 768px) 33.333vw, (min-width: 576px) 50vw, 100vw',
-                            get_the_title()
-
-                        );
-                        ?>
-                    </div>
-                    <?php
-                    if ( $link_to_brand ) {
-                        echo '</a>';
-                    }
-                    ?>
-                </div>
-            <?php wp_reset_postdata(); endforeach;?>
-        </div>
-    </section>
-<?php endif;?>
+if ( have_rows('sections') ) {
+    while (have_rows('sections')) {
+        the_row();
+        include 'sections/' . get_row_layout() . '.php';
+    }
+}
+?>
 
 <?php get_footer();?>
