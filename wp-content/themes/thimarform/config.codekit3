@@ -97,6 +97,14 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/acf-json/group_5ca58b50aae49.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5ca58b50aae49-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/assets/css/aos.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1087,6 +1095,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/page-varumarken.php",
+		"oF": 0
+		},
+	"/page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page.php",
 		"oF": 0
 		},
 	"/README.md": {

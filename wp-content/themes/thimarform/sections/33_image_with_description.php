@@ -1,6 +1,6 @@
 <?php if ( have_rows('images') ) : ?>
     <section data-aos="fade-up" class="mb-4">
-        <div class="row no-gutters px-sm-1">
+        <div class="row no-gutters">
             <?php while ( have_rows('images') ) : the_row(); ?>
                 <div class="col-sm-6 col-md-4">
                     <div class="image-with-description">

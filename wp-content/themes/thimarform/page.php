@@ -1,9 +1,4 @@
-<?php
-/*
-Template name: Nyheter
-*/
-get_header();
-?>
+<?php get_header(); ?>
 
 <?php if ( $header = get_field('news_page_header') ) : ?>
     <header data-aos="fade-up" class="mb-4 text-besides-image">
