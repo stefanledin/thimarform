@@ -10,6 +10,18 @@ $base_background = ( ! empty( $background_image['small']) ) ? $background_image[
         }
         ?>
     </div>
+    <?php
+    $promo = get_sub_field('promo');
+    if ( $promo['image'] ) : ?>
+        <div class="site-header__promo">
+            <?php
+            echo sprintf(
+                '<img src="%s">',
+                $promo['image']['url']
+            );
+            ?>
+        </div>
+    <?php endif;?>
     <div class="site-header__image">
         <picture>
             <?php

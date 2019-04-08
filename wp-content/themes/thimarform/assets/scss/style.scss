@@ -473,7 +473,12 @@ body.mobile-menu--open {
     }
 }
 
+.site-header {
+    position: relative;
+}
+
 .site-header__content {
+    width: 100%;
     padding: 7rem 0 0 0;
     position: absolute;
     z-index: 2;
@@ -493,6 +498,29 @@ body.mobile-menu--open {
 
     @include media-breakpoint-up(xl) {
         padding: 12rem 0 0 12rem;
+    }
+}
+
+.site-header__promo {
+    right: 1rem;
+    bottom: 1rem;
+    position: absolute;
+    z-index: 2;
+    img {
+        max-width: 120px;
+
+        @include media-breakpoint-up(md) {
+            max-width: 150px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            max-width: 200px;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        right: 4rem;
+        bottom: 3.5rem;
     }
 }
 
