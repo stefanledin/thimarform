@@ -479,7 +479,7 @@ body.mobile-menu--open {
 
 .site-header__content {
     width: 100%;
-    padding: 7rem 0 0 0;
+    padding: 5rem 0 0 0;
     position: absolute;
     z-index: 2;
 
@@ -493,11 +493,11 @@ body.mobile-menu--open {
     }
     
     @include media-breakpoint-up(lg) {
-        padding: 10rem 0 0 10rem;
+        padding: 6.6rem 0 0 10rem;
     }
 
     @include media-breakpoint-up(xl) {
-        padding: 12rem 0 0 12rem;
+        padding: 6.6rem 0 0 12rem;
     }
 }
 

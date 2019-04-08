@@ -3191,7 +3191,7 @@ body.mobile-menu--open {
 
 .site-header__content {
   width: 100%;
-  padding: 7rem 0 0 0;
+  padding: 5rem 0 0 0;
   position: absolute;
   z-index: 2; }
   .site-header__content h1 {
@@ -3202,10 +3202,10 @@ body.mobile-menu--open {
         background: none; } }
   @media (min-width: 992px) {
     .site-header__content {
-      padding: 10rem 0 0 10rem; } }
+      padding: 6.6rem 0 0 10rem; } }
   @media (min-width: 1200px) {
     .site-header__content {
-      padding: 12rem 0 0 12rem; } }
+      padding: 6.6rem 0 0 12rem; } }
 
 .site-header__promo {
   right: 1rem;

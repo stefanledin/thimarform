@@ -53,8 +53,13 @@
 									<?php
 									the_field('company_info_phone', 'option');
 									echo '<br>';
-									$email = get_field('company_info_email', 'option');
-									echo sprintf('<a href="mailto:%s">%s</a>', antispambot( $email ), antispambot($email) );
+									if ( have_rows('company_info_email', 'option') ) {
+										while ( have_rows('company_info_email', 'option') ) {
+											the_row();
+											$email = get_sub_field('email');
+											echo sprintf('<a href="mailto:%s">%s</a><br>', antispambot( $email['address'] ), $email['label'] );
+										}
+									}
 									?>
 								</p>
 							</div>
