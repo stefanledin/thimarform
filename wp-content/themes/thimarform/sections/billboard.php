@@ -15,10 +15,16 @@ $base_background = ( ! empty( $background_image['small']) ) ? $background_image[
     if ( $promo['image'] ) : ?>
         <div class="site-header__promo">
             <?php
+            if ( $promo['url'] ) {
+                echo sprintf('<a href="%s">', $promo['url']);
+            }
             echo sprintf(
                 '<img src="%s">',
                 $promo['image']['url']
             );
+            if ( $promo['url'] ) {
+                echo '</a>';
+            }
             ?>
         </div>
     <?php endif;?>
