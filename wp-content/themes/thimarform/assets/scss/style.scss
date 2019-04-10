@@ -156,7 +156,8 @@ p {
 /*----------  Element  ----------*/
 
 a, a:visited {
-    color: $black;
+    color: black;
+    fill:inherit;
 }
 a:hover {
     color: $black;
@@ -722,7 +723,7 @@ body.mobile-menu--open {
     background: $grey-light;
     color: #888888;
     text-align: center;
-    a {
+    a, a:visited {
         color: #888888;
     }
     h3 {

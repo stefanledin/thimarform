@@ -2942,7 +2942,8 @@ p {
 
 /*----------  Element  ----------*/
 a, a:visited {
-  color: black; }
+  color: black;
+  fill: inherit; }
 
 a:hover {
   color: black;
@@ -3376,7 +3377,7 @@ body.mobile-menu--open {
   background: #eaeaea;
   color: #888888;
   text-align: center; }
-  .site-footer a {
+  .site-footer a, .site-footer a:visited {
     color: #888888; }
   .site-footer h3 {
     text-transform: uppercase;
