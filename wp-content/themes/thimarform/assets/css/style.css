@@ -2939,6 +2939,8 @@ p {
   @media (min-width: 992px) {
     p {
       font-size: 1.2rem; } }
+  p.p--small {
+    font-size: 0.9rem; }
 
 /*----------  Element  ----------*/
 a, a:visited {
@@ -2999,6 +3001,8 @@ video {
     text-decoration: none; }
     .btn-w-arrow:hover .btn-w-arrow__arrow {
       background: #E3C5BD; }
+  .btn-w-arrow.btn-w-arrow--small {
+    font-size: 0.9rem; }
   .btn-w-arrow svg {
     width: 15px; }
     @media (min-width: 768px) {
@@ -3125,6 +3129,9 @@ body.mobile-menu--open {
  * Header
  *
  */
+.cookie-bar {
+  transition: all .5s ease-in-out; }
+
 .site-navigation {
   background: white; }
   @media (min-width: 992px) {

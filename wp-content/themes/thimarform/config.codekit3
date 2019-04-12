@@ -125,6 +125,17 @@
 		"oAP": "/assets/css/style.css.map",
 		"oF": 0
 		},
+	"/assets/img/favicon.png": {
+		"ft": 32768,
+		"iS": 11430,
+		"oA": 0,
+		"oAP": "/assets/img/favicon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/img/icon-facebook.svg": {
 		"ft": 2097152,
 		"miP": 0,

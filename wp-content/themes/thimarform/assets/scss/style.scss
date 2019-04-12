@@ -150,7 +150,10 @@ p {
     @include media-breakpoint-up(lg) {
         font-size: 1.2rem; 
     }
-
+    
+    &.p--small {
+        font-size: 0.9rem;
+    }
 }
 
 /*----------  Element  ----------*/
@@ -224,6 +227,10 @@ video {
         .btn-w-arrow__arrow {
             background: #E3C5BD;
         }
+    }
+
+    &.btn-w-arrow--small {
+        font-size: 0.9rem;
     }
 
     svg {
@@ -391,6 +398,10 @@ body.mobile-menu--open {
  * Header
  *
  */
+
+.cookie-bar {
+    transition: all .5s ease-in-out;
+}
 
 .site-navigation {
     background: white;

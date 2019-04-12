@@ -19,6 +19,27 @@ WebFont.load({
 
 /**
  *
+ * Cookiebar
+ *
+ */
+
+const cookieBar = document.querySelector('.cookie-bar');
+const acceptCookiesButton = document.querySelector('#js-accept-cookies');
+if (acceptCookiesButton) {
+    acceptCookiesButton.addEventListener('click', event => {
+        event.preventDefault();
+        document.cookie = 'thimar_cookies_accepted=1; expires=60*60*24*365';
+
+        const height = cookieBar.clientHeight;
+        cookieBar.style.marginTop = `-${height}px`;
+        setTimeout(() => {
+            cookieBar.remove();
+        }, 500);
+    });
+}
+
+/**
+ *
  * Introfilm
  *
  */

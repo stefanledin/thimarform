@@ -8,6 +8,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="icon" type="image/x-icon" href="<?php echo asset('img/favicon.png');?>">
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class();?>>
@@ -46,6 +47,17 @@
 		</nav>
 
 		<div class="site-wrapper">
+
+			<?php if ( empty($_COOKIE['thimar_cookies_accepted']) ) : ?>
+				<div class="cookie-bar row no-gutters">
+					<div class="col-10 offset-1">
+						<div class="py-2 text-center">
+							<p class="p--small mb-1">Vi använder cookies för att förbättra din upplevelse, följa upp hur webbsidan används och för att stödja vår marknadsföring. Genom att gå vidare godkänner du att vi använder cookies.</p>
+							<a href="#" id="js-accept-cookies" class="btn-w-arrow btn-w-arrow--small btn-w-arrow--black"><span class="btn-w-arrow__label">Godkänn</span></a>
+						</div>
+					</div>
+				</div>
+			<?php endif;?>
 				
 			<nav class="site-navigation">
 				<div class="row no-gutters">
