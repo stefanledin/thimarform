@@ -2,12 +2,9 @@
     <div class="row no-gutters pt-md-5">
         <div class="col-10 offset-1 mb-2">
             <?php
-            echo sprintf(
-                '<h1>%s</h1>', 
-                ( $headline = get_sub_field('headline') ) 
-                    ? $headline 
-                    : get_the_title() 
-            );
+            if ( $headline = get_sub_field('headline') ) {
+                echo sprintf('<h1>%s</h1>', $headline);
+            }
             ?>
         </div>
     </div>
