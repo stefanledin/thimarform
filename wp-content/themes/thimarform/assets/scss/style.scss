@@ -321,7 +321,7 @@ video {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 20;
+    z-index: 30;
     display: flex;
     background: white;
     transition: all 1s ease;
@@ -401,6 +401,13 @@ body.mobile-menu--open {
 
 .cookie-bar {
     transition: all .5s ease-in-out;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    z-index: 20;
+    display: none;
 }
 
 .site-navigation {

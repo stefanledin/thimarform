@@ -811,8 +811,8 @@
                             "collapsed": "",
                             "min": 0,
                             "max": 0,
-                            "layout": "table",
-                            "button_label": "",
+                            "layout": "row",
+                            "button_label": "Lägg till bild",
                             "sub_fields": [
                                 {
                                     "key": "field_5c926ed8af3c6",
@@ -837,6 +837,25 @@
                                     "max_height": 0,
                                     "max_size": 0,
                                     "mime_types": ""
+                                },
+                                {
+                                    "key": "field_5cb6afc85d5d0",
+                                    "label": "Länk",
+                                    "name": "url",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
                                 },
                                 {
                                     "key": "field_5c926ee6af3c7",
@@ -1632,5 +1651,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1554741771
+    "modified": 1555476487
 }
