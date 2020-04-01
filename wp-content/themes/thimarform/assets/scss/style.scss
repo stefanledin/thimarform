@@ -454,6 +454,7 @@ body.mobile-menu--open {
         font-size: 1.1rem;
         color: black;
         text-transform: uppercase;
+        letter-spacing: 0.06rem;
 
         @include media-breakpoint-up(xl) {
             font-size: 1.3rem;

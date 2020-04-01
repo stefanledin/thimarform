@@ -1143,6 +1143,14 @@
 		"oAP": "/sections/33_image_with_description.php",
 		"oF": 0
 		},
+	"/sections/50_50_content_columns.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/sections/50_50_content_columns.php",
+		"oF": 0
+		},
 	"/sections/50_50_gallery_with_intro.php": {
 		"cB": 0,
 		"ft": 8192,

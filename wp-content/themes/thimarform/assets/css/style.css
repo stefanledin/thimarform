@@ -3173,7 +3173,8 @@ body.mobile-menu--open {
   .site-menu a {
     font-size: 1.1rem;
     color: black;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    letter-spacing: 0.06rem; }
     @media (min-width: 1200px) {
       .site-menu a {
         font-size: 1.3rem; } }

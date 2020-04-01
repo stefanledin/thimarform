@@ -14,9 +14,11 @@
 	<body <?php body_class();?>>
 
 		<?php if ( (is_home() || is_front_page()) && empty($_COOKIE['thimar_visited']) ) : ?>
+			<!--
 			<div class="intro-video">
 				<video src="<?php echo asset('video/thimarlogo_svart.mp4');?>" playsinline autoplay muted></video>
 			</div>
+			-->
 		<?php endif;?>
 
 		<nav class="mobile-menu">
